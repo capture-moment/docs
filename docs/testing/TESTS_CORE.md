@@ -2,7 +2,7 @@
 This guide for running the tests.
 
 ```bash
-The followings arguments are enabled by default in debug mode -Ddiagnostics="on" -Dtests="on"
+The followings arguments are enabled by default in debug mode -Ddiagnostics=on -Dtests=on
 ```
 
 ### Windows MSVC
@@ -15,7 +15,7 @@ ctest --preset debug-vcpkg-msvc
 
 ### Example in Release
 ```bash
-cmake --preset release-vcpkg-msvc -Dtests="on" -Ddiagnostics="on"
+cmake --preset release-vcpkg-msvc -Dtests=on -Ddiagnostics=on
 cmake --build --preset release-vcpkg-msvc
 ctest --preset release-vcpkg-msvc
 ```
@@ -29,7 +29,7 @@ ctest --preset debug-ninja
 ```
 ### Example release
 ```bash
-cmake --preset release-ninja -Dtests="on" -Ddiagnostics="on"
+cmake --preset release-ninja -Dtests=on -Ddiagnostics=on
 cmake --build --preset release-ninja
 ctest --preset release-ninja
 ```
@@ -43,7 +43,7 @@ ctest --preset debug-ninja
 ```
 ### Example release
 ```bash
-cmake --preset release-ninja -Dtests="on" -Ddiagnostics="on"
+cmake --preset release-ninja -Dtests=on -Ddiagnostics=on
 cmake --build --preset release-ninja
 ctest --preset release-ninja
 ```

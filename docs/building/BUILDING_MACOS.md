@@ -27,7 +27,7 @@ cmake --preset debug-homebrew
 
 ```bash
 # Adapt $HOME/Qt to your installation path
-cmake --preset release-homebrew -Ddesktop_ui=ON -DQt6_DIR="$HOME/Qt/6.10.2/macos/lib/cmake/Qt6"
+cmake --preset release-homebrew -Ddesktop_ui=on -DQt6_DIR="$HOME/Qt/6.10.2/macos/lib/cmake/Qt6"
 ```
 
 #### Build the project
