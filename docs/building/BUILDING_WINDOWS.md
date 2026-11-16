@@ -36,7 +36,7 @@ cmake --build --preset release-vcpkg-msvc
 
 For Full Development (Debug):
 ```bash
-cmake --preset debug-vcpkg-msvc -Dsanitizers="on" -Dtests="on"
+cmake --preset debug-vcpkg-msvc
 cmake --build --preset debug-vcpkg-msvc
 ```
 
@@ -45,7 +45,7 @@ cmake --build --preset debug-vcpkg-msvc
 #### If you have Qt
 
 ```bash
-cmake --preset release-vcpkg-msvc -Ddesktop_ui="ON"
+cmake --preset release-vcpkg-msvc -Ddesktop_ui=on
 cmake --build --preset release-vcpkg-msvc
 ```
 

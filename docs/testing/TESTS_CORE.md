@@ -1,25 +1,49 @@
 # How to run Tests
 This guide for running the tests.
 
-
-We use Sanitizers and GoogleTest
-
-## Example on Windows MSVC
 ```bash
-cmake --preset debug-vcpkg-msvc -Dtests="on" -Dsanitizers="on"
+The followings arguments are enabled by default in debug mode -Ddiagnostics=on -Dtests=on
+```
+
+### Windows MSVC
+### Example in Debug mode
+```bash
+cmake --preset debug-vcpkg-msvc
 cmake --build --preset debug-vcpkg-msvc
 ctest --preset debug-vcpkg-msvc
 ```
-## Example on Linux with Ninja
+
+### Example in Release
 ```bash
-cmake --preset debug-ninja -Dtests="on" -Dsanitizers="on"
+cmake --preset release-vcpkg-msvc -Dtests=on -Ddiagnostics=on
+cmake --build --preset release-vcpkg-msvc
+ctest --preset release-vcpkg-msvc
+```
+
+## Linux Ninja
+### Example in Debug
+```bash
+cmake --preset debug-ninja
 cmake --build --preset debug-ninja
 ctest --preset debug-ninja
 ```
-
-## Example on macOS with Ninja
+### Example release
 ```bash
-cmake --preset debug-homebrew -Dtests="on" -Dsanitizers="on"
-cmake --build --preset debug-homebrew
-ctest --preset debug-homebrew
+cmake --preset release-ninja -Dtests=on -Ddiagnostics=on
+cmake --build --preset release-ninja
+ctest --preset release-ninja
+```
+
+## macOS Ninja
+### Example in Debug
+```bash
+cmake --preset debug-ninja
+cmake --build --preset debug-ninja
+ctest --preset debug-ninja
+```
+### Example release
+```bash
+cmake --preset release-ninja -Dtests=on -Ddiagnostics=on
+cmake --build --preset release-ninja
+ctest --preset release-ninja
 ```
