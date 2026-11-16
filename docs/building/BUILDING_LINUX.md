@@ -35,7 +35,7 @@ chmod +x setup/setup-dnf.sh
 
 ```bash
 # Configure the project using a generic preset
-cmake --preset debug-ninja -DBUILD_SANITIZERS=ON -DBUILD_TESTS=ON
+cmake --preset debug-ninja
 
 # Or, for a release build
 cmake --preset release-ninja -DBUILD_DESKTOP_UI=ON
