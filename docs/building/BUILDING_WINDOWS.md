@@ -36,7 +36,7 @@ cmake --build --preset release-vcpkg-msvc
 
 For Full Development (Debug):
 ```bash
-cmake --preset debug-vcpkg-msvc -Dsanitizers="on" -Dtests="on"
+cmake --preset debug-vcpkg-msvc
 cmake --build --preset debug-vcpkg-msvc
 ```
 

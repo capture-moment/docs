@@ -19,7 +19,7 @@ From the root of the project, run:
 **Compilation**
 ```bash
 # Use the optimized Homebrew preset and enable the Desktop UI
-cmake --preset debug-homebrew -Dsanitizers=on -Dtests=on
+cmake --preset debug-homebrew
 ```
 
 ##### Add Qt UI
